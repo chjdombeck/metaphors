@@ -147,11 +147,12 @@
 
   <!-- HEADER -->
   <header class="relative z-10 border-b border-white/5">
-    <div class="max-w-7xl mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
       <div class="flex items-center">
-        <img src="TheRealityLabsLogo.png" alt="The Reality Labs" class="h-[54px] md:h-[68px] object-contain" />
+        <img src="TheRealityLabsLogo.png" alt="The Reality Labs" class="h-[43px] md:h-[54px] object-contain" />
       </div>
-      <a href="#get-book" class="header-cta hidden sm:inline-flex items-center gap-2 border text-xs md:text-sm font-bold tracking-widest px-5 py-2.5">
+      <a href="#get-book" class="btn-cta gold-shadow hidden sm:inline-flex items-center gap-2 font-bold text-xs md:text-sm tracking-widest px-4 py-2 rounded-sm"
+        style="background: linear-gradient(180deg, var(--gold-light), var(--gold)); color:#1a1206;">
         FREE EBOOK DOWNLOAD
       </a>
     </div>
@@ -172,12 +173,13 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 6l-6 6 6 6"/></svg>
           </button>
 
-          <div id="preview-carousel" class="relative w-[210px] sm:w-[260px] md:w-[280px] lg:w-[420px] max-w-full aspect-[1640/2320] rounded-md overflow-hidden book-glow border border-white/10 bg-black">
-            <img data-slide="0" src="cover-front.png" alt="Metaphors book front cover" class="preview-slide absolute inset-0 w-full h-full object-contain" />
-            <img data-slide="1" src="cover-back.png" alt="Metaphors book back cover" class="preview-slide absolute inset-0 w-full h-full object-contain opacity-0" />
-            <img data-slide="2" src="interior-contents-page.png" alt="Table of contents" class="preview-slide absolute inset-0 w-full h-full object-cover opacity-0" />
-            <img data-slide="3" src="interior-intro-page.png" alt="Introduction page" class="preview-slide absolute inset-0 w-full h-full object-cover opacity-0" />
-            <img data-slide="4" src="chapter-1-opener.png" alt="Chapter one opener" class="preview-slide absolute inset-0 w-full h-full object-cover opacity-0" />
+          <div id="preview-carousel" class="relative w-[210px] sm:w-[260px] md:w-[280px] lg:w-[420px] max-w-full aspect-[1640/2320] rounded-md overflow-hidden book-glow border border-white/10">
+            <img data-slide="0" src="METAPHORSmock.png" alt="Metaphors 3D book mockup" class="preview-slide absolute inset-0 w-full h-full object-contain scale-[1.38]" />
+            <img data-slide="1" src="cover-front.png" alt="Metaphors book front cover" class="preview-slide absolute inset-0 w-full h-full object-contain opacity-0" />
+            <img data-slide="2" src="cover-back.png" alt="Metaphors book back cover" class="preview-slide absolute inset-0 w-full h-full object-contain opacity-0" />
+            <img data-slide="3" src="interior-contents-page.png" alt="Table of contents" class="preview-slide absolute inset-0 w-full h-full object-cover opacity-0" />
+            <img data-slide="4" src="interior-intro-page.png" alt="Introduction page" class="preview-slide absolute inset-0 w-full h-full object-cover opacity-0" />
+            <img data-slide="5" src="chapter-1-opener.png" alt="Chapter one opener" class="preview-slide absolute inset-0 w-full h-full object-cover opacity-0" />
 
             <!-- Dots -->
             <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5" id="carousel-dots"></div>
@@ -194,20 +196,16 @@
 
       <!-- Copy + form -->
       <div class="order-1 md:order-2 min-w-0">
-        <div class="fade-up">
-          <span class="eyebrow-badge inline-flex items-center gap-2 border text-xs md:text-sm font-bold tracking-widest px-4 py-2">
-            <span class="w-1.5 h-1.5 rounded-full" style="background:var(--gold);"></span>
-            FREE EBOOK
-          </span>
-        </div>
-
-        <h1 class="display text-4xl sm:text-5xl md:text-4xl lg:text-6xl leading-[0.98] mt-5 fade-up delay-1 break-words">
-          METAPHORS<span style="color:var(--gold);">.</span>
-          <span class="block mt-2" style="color:var(--gold);">A METAPHYSICAL GUIDE.</span>
+        <h1 class="display text-4xl sm:text-5xl md:text-4xl lg:text-6xl leading-[0.98] fade-up delay-1 break-words">
+          METAPHORS
+          <span class="block mt-2" style="color:var(--gold);">A METAPHYSICAL GUIDE</span>
         </h1>
 
         <p class="mt-6 text-base md:text-lg leading-[1.7] max-w-md" style="color:#b9b1a2;">
-          A short, powerful read that reframes the stories you tell yourself about reality and hands you the metaphors to start telling new ones. Download it free.
+          A short, powerful read that captures the essence of reality creation and universal law.
+        </p>
+        <p class="mt-4 text-base md:text-lg leading-[1.7] max-w-md" style="color:#b9b1a2;">
+          Download it for free.
         </p>
 
         <form id="get-book" class="mt-9 space-y-4 max-w-md">
