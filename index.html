@@ -400,7 +400,9 @@
           .then(res => res.json().catch(() => ({})))
           .then(() => {
             submitLabel.textContent = 'CHECK YOUR EMAIL';
-            status.innerHTML = 'You’re in — Metaphors is on its way to your inbox.';
+            submitBtn.style.background = 'linear-gradient(180deg, #4caf6e, #2e7d46)';
+            submitBtn.style.color = '#f4fbf6';
+            status.innerHTML = 'You’re in — Metaphors is on its way to your inbox. (Don’t see it? Check your spam folder.)';
             status.style.color = 'var(--gold-light)';
             form.reset();
           })
