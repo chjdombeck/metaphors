@@ -20,6 +20,7 @@
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
+  @media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth;} }
   body{
     background:var(--bg);
     color:var(--ink);
@@ -147,12 +148,12 @@
   <div class="noise"></div>
 
   <!-- HEADER -->
-  <header class="relative z-10 border-b border-white/5">
+  <header id="top" class="relative z-10 border-b border-white/5">
     <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
       <div class="flex items-center">
         <img src="TheRealityLabsLogo.png" alt="The Reality Labs" class="h-[43px] md:h-[54px] object-contain" />
       </div>
-      <a href="#get-book" class="btn-cta gold-shadow hidden sm:inline-flex items-center gap-2 font-bold text-[11px] md:text-xs tracking-widest px-3.5 py-1.5 rounded-sm"
+      <a href="#top" class="btn-cta gold-shadow hidden sm:inline-flex items-center gap-2 font-bold text-[11px] md:text-xs tracking-widest px-3.5 py-1.5 rounded-sm"
         style="background: linear-gradient(180deg, var(--gold-light), var(--gold)); color:#1a1206;">
         FREE EBOOK DOWNLOAD
       </a>
@@ -361,7 +362,7 @@
         <p class="mt-5 text-base md:text-lg max-w-lg mx-auto" style="color:#b9b1a2;">
           Nine metaphors, fifteen minutes, one new way of seeing your reality. Enter your name and email above and it lands straight in your inbox.
         </p>
-        <a href="#get-book" class="btn-cta gold-shadow inline-flex items-center gap-2 font-bold text-sm md:text-base tracking-wide px-8 py-4 rounded-sm mt-8"
+        <a href="#top" class="btn-cta gold-shadow inline-flex items-center gap-2 font-bold text-sm md:text-base tracking-wide px-8 py-4 rounded-sm mt-8"
           style="background: linear-gradient(180deg, var(--gold-light), var(--gold)); color:#1a1206;">
           GET THE FREE EBOOK
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
